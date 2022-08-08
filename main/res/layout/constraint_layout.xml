@@ -1,0 +1,166 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ConstraintLayoutActivity"
+    android:padding="16dp"
+    >
+
+    <ImageView
+        android:id="@+id/icon_widgets_uploadPicture"
+        android:layout_width="52dp"
+        android:layout_height="48dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="4dp"
+        android:background="@drawable/background_round"
+        android:padding="24dp"
+        android:src="@drawable/ic_baseline_access_time_24"
+        app:layout_constraintBottom_toTopOf="@+id/text_constraint_text3"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.43"
+        app:tint="@color/cardview_light_background" />
+
+    <TextView
+        android:id="@+id/text_constraint_text2"
+        android:layout_width="150dp"
+        android:layout_height="36dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="28dp"
+        android:background="@color/material_dynamic_primary50"
+        android:gravity="center"
+        android:text="Actualizacion disponible"
+        android:textColor="@color/white"
+        app:layout_constraintStart_toEndOf="@+id/icon_widgets_uploadPicture"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/text_constraint_text2.5"
+        android:layout_width="125dp"
+        android:layout_height="36dp"
+        android:layout_marginTop="28dp"
+        android:layout_marginEnd="4dp"
+        android:background="@color/material_dynamic_primary50"
+        android:gravity="center"
+        android:text="descargar"
+        android:textColor="@color/white"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/text_constraint_text3"
+        android:layout_width="0dp"
+        android:layout_height="36dp"
+        android:layout_marginTop="28dp"
+        android:layout_marginEnd="4dp"
+        android:background="@color/material_dynamic_primary60"
+        android:gravity="center"
+        android:text="13 de octubre"
+        android:textColor="@color/white"
+        app:layout_constraintEnd_toStartOf="@+id/text_constraint_text4"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/text_constraint_text2" />
+
+    <TextView
+        android:id="@+id/text_constraint_text4"
+        android:layout_width="0dp"
+        android:layout_height="36dp"
+        android:layout_marginStart="4dp"
+        android:layout_marginTop="28dp"
+        android:background="@color/material_dynamic_primary60"
+        android:gravity="center"
+        android:text="Terminar jornada"
+        android:textColor="@color/white"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@id/text_constraint_text3"
+        app:layout_constraintTop_toBottomOf="@id/text_constraint_text2" />
+
+    <TextView
+        android:id="@+id/text_constraint_text5"
+        android:layout_width="176dp"
+        android:layout_height="97dp"
+        android:layout_marginStart="100dp"
+        android:layout_marginTop="12dp"
+        android:background="@color/material_dynamic_primary70"
+        android:gravity="center"
+        android:text="Jueves"
+        android:textColor="@color/white"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/text_constraint_text4" />
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/guideline_constraint_separator"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        app:layout_constraintGuide_percent="0.33" />
+
+    <TextView
+        android:id="@+id/text_constraint_text6"
+        android:layout_width="167dp"
+        android:layout_height="50dp"
+        android:layout_marginTop="16dp"
+        android:background="@color/material_dynamic_secondary40"
+        android:gravity="center"
+        android:text="Don emiliano"
+        android:textColor="@color/white"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/guideline_constraint_separator" />
+
+    <TextView
+        android:id="@+id/text_constraint_text7"
+        android:layout_width="179dp"
+        android:layout_height="109dp"
+        android:layout_marginTop="12dp"
+        android:layout_marginEnd="208dp"
+        android:background="@color/material_dynamic_secondary40"
+        android:gravity="center"
+        android:text="En cayala cerca de sushiito"
+        android:textColor="@color/white"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/text_constraint_text6" />
+
+    <TextView
+        android:id="@+id/text_constraint_text8"
+        android:layout_width="168dp"
+        android:layout_height="63dp"
+        android:background="@color/material_dynamic_secondary50"
+        android:gravity="center"
+        android:text="10 am - 11 pm"
+        android:textColor="@color/white"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/text_constraint_text7"
+        app:layout_constraintVertical_bias="0.051" />
+
+    <TextView
+        android:id="@+id/text_constraint_text9"
+        android:layout_width="89dp"
+        android:layout_height="49dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginBottom="128dp"
+        android:background="@color/material_dynamic_secondary60"
+        android:gravity="center"
+        android:text="iniciar"
+        android:textColor="@color/white"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <TextView
+        android:id="@+id/text_constraint_text10"
+        android:layout_width="86dp"
+        android:layout_height="59dp"
+        android:layout_marginEnd="160dp"
+        android:layout_marginBottom="120dp"
+        android:background="@color/material_dynamic_secondary60"
+        android:gravity="center"
+        android:text="detalles"
+        android:textColor="@color/white"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
